@@ -9,20 +9,46 @@ main{
 
 sidebar{
     background-color: #1992D4;
-    display: grid;
+    display: flex;
     row-gap: 3%;
+    flex-direction: column;
     grid-column: 1/2; 
+    grid-template-columns: 1fr;
+    row-gap: 5%;
+    padding: 3% 8%;
+    min-width: 272px;
 }
 .logo{
     height: 10%;
     display: flex;
     align-items: center;
     gap: 6%;
-    padding-left: 5%;
+    
 }
 .logo span{
     font-family: "Roboto";
     color: white;
     font-size: 2.3rem;
     font-weight: 800;
+}
+nav{
+    display: grid;
+    height: 44%;
+    overflow: hidden;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(6,1fr);
+    row-gap: 10%;
+    box-sizing: content-box;
+    
+
+}
+nav span{
+    font-family: "Roboto";
+    color: white;
+    display: flex;
+    justify-content: start;
+    font-size: 2rem;
+    align-items: center;
+    
+    font-weight: 600;
 }
