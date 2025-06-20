@@ -14,7 +14,8 @@ sidebar{
     flex-direction: column;
     grid-column: 1/2; 
     grid-template-columns: 1fr;
-    row-gap: 5%;
+    grid-template-rows: repeat();
+    row-gap: 7%;
     padding: 3% 8%;
     min-width: 272px;
 }
@@ -33,7 +34,7 @@ sidebar{
 }
 nav{
     display: grid;
-    height: 44%;
+    height: 35%;
     overflow: hidden;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(6,1fr);
@@ -47,8 +48,32 @@ nav span{
     color: white;
     display: flex;
     justify-content: start;
-    font-size: 2rem;
+    font-size: 1.7rem;
     align-items: center;
-    
+    cursor: pointer;
     font-weight: 600;
+}
+tech{
+    display: grid;
+    height: 20%;
+    overflow: hidden;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(6,1fr);
+    row-gap: 10%;
+    box-sizing: content-box;
+
+}
+tech span{
+    font-family: "Roboto";
+    color: white;
+    display: flex;
+    justify-content: start;
+    font-size: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+nav svg,tech svg{
+    cursor: pointer;
 }
