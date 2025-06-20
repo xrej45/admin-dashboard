@@ -103,7 +103,7 @@ accMax{
     
 }
 btnsCont{
-    background-color: aqua;
+    
 }
 .spec1{
     height: 100%;
@@ -164,7 +164,32 @@ searchbar input{
     font-size: 2rem;
     font-weight: 600;
     width: 70%;
+    line-height: 2rem;
+    align-self: self-start;
+    padding-top: 2%;
 }
 .accmax span::first-line{
     font-size: 1.3rem;
+}
+.btnsCont{
+    justify-content: space-between;
+}
+.btnsCont button{
+    font-family: "Roboto";
+    color: white;
+    background-color: #1992D4;
+    border: none;
+    font-size: 1.5rem;
+    padding: 2% 6%;
+    border-radius: 32px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.btnsCont button:hover{
+    background-color: #1473a7;
+}
+.btnsCont button:active{
+    background-color: #0c4564;
+    color: #0c4564;
+
 }
