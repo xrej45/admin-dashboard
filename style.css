@@ -91,20 +91,12 @@ header{
     padding:0 5%;
 
 }
-.body{
-    
-}
+
 searchbar{
     display: flex;
 
 }
 
-accMax{
-    
-}
-btnsCont{
-    
-}
 .spec1{
     height: 100%;
     box-sizing: border-box;
