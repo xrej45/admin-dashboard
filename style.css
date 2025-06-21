@@ -12,17 +12,18 @@
 sidebar{
     background-color: #1992D4;
     display: flex;
-    row-gap: 3%;
     flex-direction: column;
     grid-column: 1/2; 
     grid-template-columns: 1fr;
-    grid-template-rows: repeat();
-    row-gap: 7%;
-    padding: 3% 8%;
+    grid-template-rows: 3;
+    row-gap: 3vh;
+    padding: 1vh 1vw;
     min-width: 272px;
+    grid-auto-rows: none;
+    height: 100%;
 }
 .logo{
-    height: 10%;
+    height: 10vh;
     display: flex;
     align-items: center;
     gap: 6%;
@@ -36,11 +37,11 @@ sidebar{
 }
 nav{
     display: grid;
-    height: 35%;
+    height: 30vh;
     overflow: hidden;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(6,1fr);
-    row-gap: 10%;
+    row-gap: 0.5rem;
     box-sizing: content-box;
     
 
@@ -57,11 +58,11 @@ nav span{
 }
 tech{
     display: grid;
-    height: 20%;
+    height: 10vh;
     overflow: hidden;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(6,1fr);
-    row-gap: 10%;
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 0.5rem;
     box-sizing: content-box;
 
 }
@@ -78,6 +79,9 @@ tech span{
 }
 nav svg,tech svg{
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 main{
     display: grid;
@@ -184,4 +188,27 @@ searchbar input{
     background-color: #0c4564;
     color: #0c4564;
 
+}
+.body{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.projectsCont{
+    background-color: #1473a7;
+    padding: 2%;
+}
+.projectsCont span{
+    font-size: 1.7rem;
+    font-family: "Roboto";
+    font-weight: 600;
+
+}
+.projectsGrid{
+    background-color: aqua;
+    height: fit-content;
+}
+.project{
+    height: 250px;
+    width: 250px;
+    background-color: #0c4564;
 }
