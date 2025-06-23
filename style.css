@@ -21,6 +21,8 @@ sidebar{
     min-width: 272px;
     grid-auto-rows: none;
     height: 100%;
+    box-sizing: border-box;
+    position: sticky;
 }
 .logo{
     height: 10vh;
@@ -88,12 +90,13 @@ main{
     grid-template-rows: 19.91vh 4fr;
 }
 header{
-    box-shadow: 10px 0px 15px 3px rgba(0, 0, 0, 0.212);
+    box-shadow: 20px 0px 7px 15px rgba(0, 0, 0, 0.055);
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1.5fr;
     padding:0 5%;
-
+    position: relative;
+    z-index: 5;
 }
 
 searchbar{
@@ -112,7 +115,7 @@ searchbar{
 searchbar input{
     width:90%;
     height: 40%;
-    background-color: #E2E9F0;
+    background-color: #E2E8F0;
     outline: none;
     border: none;
     border-radius: 32px;
@@ -194,7 +197,7 @@ searchbar input{
     grid-template-columns: 4fr 1fr;
 }
 .projectsCont{
-    background-color: #1473a7;
+    background-color: #E2E8F0;
     padding: 2%;
 }
 .projectsCont span{
@@ -204,11 +207,62 @@ searchbar input{
 
 }
 .projectsGrid{
-    background-color: aqua;
-    height: fit-content;
+    /* background-color: aqua; */
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding-top: 1%;
+    justify-content: space-between;
+    align-content: start;
+    align-items: center;
+    gap: 20px;
 }
 .project{
-    height: 250px;
-    width: 250px;
-    background-color: #0c4564;
+    height: 30vh;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.185);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+.yellowSh{
+    background-color: #F0B429;
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    width: 3%;
+}
+.projectMain{
+    box-sizing: border-box;
+    position: absolute;
+    width: 97%;
+    left: 3%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 7%;
+    
+    height: 100%;
+
+}
+.projectsCont span.text{
+    color: #636363;
+    font-size: 1.3rem;
+    font-weight: 400;
+    height: 70%;
+
+}
+.projectsCont span.material-symbols-outlined{
+    font-family: "Material Symbols Outlined";
+    font-weight: 600;
+    cursor: pointer;
+}
+.iconsCont{
+    justify-self: flex-end;
+    align-self: flex-end;
+    display: flex;
+    gap: 20%;
+    transform: translateX(-40%);
 }
