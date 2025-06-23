@@ -194,11 +194,11 @@ searchbar input{
 }
 .body{
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 .projectsCont{
     background-color: #E2E8F0;
-    padding: 2%;
+    padding: 2vh;
 }
 .projectsCont span{
     font-size: 1.7rem;
@@ -210,8 +210,8 @@ searchbar input{
     /* background-color: aqua; */
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    padding-top: 1%;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    padding-top: 2vh;
     justify-content: space-between;
     align-content: start;
     align-items: center;
@@ -265,4 +265,52 @@ searchbar input{
     display: flex;
     gap: 20%;
     transform: translateX(-40%);
+}
+aside{
+    background-color: #E2E8F0;
+    padding-top: 2vh;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+.announCont{
+    height: 50vh;
+}
+.announCont span{
+    font-size: 1.7rem;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+.anounGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 16px;
+    
+    padding: 12%;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.185);
+    transform: translateY(2vh);
+}
+.anouncement{
+    background-color: white;
+    
+}
+.anouncement:first-child{
+    border-bottom: 2px solid #D2D2D2;
+}
+.anouncement:last-child{
+    border-top: 2px solid #D2D2D2;
+}
+.anouncement .title{
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+.anouncement .text{
+    font-family: "Roboto";
+    color: #636363;
+    padding: 4% 0;
 }
