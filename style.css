@@ -270,11 +270,14 @@ aside{
     background-color: #E2E8F0;
     padding-top: 2vh;
     padding-right: 2vw;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 50vh;
 }
 .announCont{
-    height: 50vh;
+    height: auto;
+    
+    box-sizing: border-box;
 }
 .announCont span{
     font-size: 1.7rem;
@@ -289,8 +292,9 @@ aside{
     height: 100%;
     box-sizing: border-box;
     border-radius: 16px;
+    box-sizing: border-box;
     
-    padding: 12%;
+    padding: 10%;
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.185);
     transform: translateY(2vh);
 }
@@ -313,4 +317,64 @@ aside{
     font-family: "Roboto";
     color: #636363;
     padding: 4% 0;
+}
+.trendingCont{
+    width: 100%;
+    transform: translateY(20%);
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.trendingCont span{
+    font-size: 1.7rem;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+.trendingGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1rf;
+    padding: 10%;
+    height: 100%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.185);
+    
+}
+.trend{
+    
+    box-sizing: border-box;
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.trend .image{
+    background:url(svintos.png);
+    height: 100%;
+    width: 30%;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+
+}
+.trend .name{
+    font-family: "Roboto";
+    font-weight: 500;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+    gap: 5%;
+
+}
+.trend .name .user{
+    font-size: 1.5rem;
+}
+.trend .name .descript{
+    font-size: 1.3rem;
+    color: #636363;
 }
